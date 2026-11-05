@@ -1,15 +1,146 @@
  .oculto {
-      display: none !important;
-    }
+     display: none !important;
+ }
 
-    /* Deixa a mensagem de loading destacada */
-    #loading {
-      margin: 15px 0;
-      padding: 10px;
-      background-color: #fff3cd;
-      color: #856404;
-      border: 1px solid #ffeeba;
-      border-radius: 4px;
-      font-weight: bold;
-      text-align: center;
-    }
+ /* Deixa a mensagem de loading destacada */
+ #loading {
+     margin: 15px 0;
+     padding: 10px;
+     background-color: #fff3cd;
+     color: #856404;
+     border: 1px solid #ffeeba;
+     border-radius: 4px;
+     font-weight: bold;
+     text-align: center;
+ }
+
+ /* Zerando margens e definindo fonte moderna */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ body {
+     background-color: #f4f6f8;
+     color: #333;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     padding: 20px;
+ }
+
+ /* Cartão principal */
+ .container {
+     background: #ffffff;
+     padding: 30px;
+     border-radius: 12px;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+     width: 100%;
+     max-width: 500px;
+ }
+
+ h1 {
+     font-size: 1.6rem;
+     margin-bottom: 8px;
+     color: #1a237e;
+     text-align: center;
+ }
+
+ p {
+     font-size: 0.95rem;
+     color: #666;
+     text-align: center;
+     margin-bottom: 25px;
+ }
+
+ /* Grupos de formulário */
+ .form-grupo {
+     margin-bottom: 18px;
+ }
+
+ label {
+     display: block;
+     margin-bottom: 6px;
+     font-weight: 600;
+     font-size: 0.9rem;
+     color: #444;
+ }
+
+ select {
+     width: 100%;
+     padding: 10px 12px;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+     font-size: 0.95rem;
+     background-color: #fff;
+     transition: border-color 0.2s, box-shadow 0.2s;
+ }
+
+ select:focus {
+     outline: none;
+     border-color: #1a237e;
+     box-shadow: 0 0 0 3px rgba(26, 35, 126, 0.15);
+ }
+
+ select:disabled {
+     background-color: #e9ecef;
+     cursor: not-allowed;
+     color: #888;
+ }
+
+ /* Indicador de Loading */
+ #loading {
+     margin: 15px 0;
+     padding: 12px;
+     background-color: #e3f2fd;
+     color: #0d47a1;
+     border: 1px solid #bbdefb;
+     border-radius: 6px;
+     font-weight: bold;
+     text-align: center;
+     animation: pulse 1.2s infinite ease-in-out;
+ }
+
+ @keyframes pulse {
+     0% {
+         opacity: 0.6;
+     }
+
+     50% {
+         opacity: 1;
+     }
+
+     100% {
+         opacity: 0.6;
+     }
+ }
+
+ /* Cartão com o resultado final */
+ .resultado {
+     margin-top: 25px;
+     padding: 20px;
+     background-color: #f1f8e9;
+     border-left: 5px solid #2e7d32;
+     border-radius: 6px;
+ }
+
+ .resultado h2 {
+     font-size: 1.2rem;
+     color: #1b5e20;
+     margin-bottom: 10px;
+ }
+
+ .resultado p {
+     text-align: left;
+     margin-bottom: 5px;
+     font-size: 0.9rem;
+     color: #333;
+ }
+
+ /* Classe utilitária essencial para controle via JS */
+ .oculto {
+     display: none !important;
+ }
