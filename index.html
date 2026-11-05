@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Tabela FIPE - BrasilAPI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <h1>🚗 Consulta Tabela FIPE</h1>
+        <p>Consulte o valor médio de veículos segundo a tabela oficial.</p>
+
+        <!-- Formulário de Seleção em Cascata -->
+        <div class="form-grupo">
+            <label for="marca">Marca:</label>
+            <select id="marca">
+                <option value="">Selecione uma marca...</option>
+            </select>
+        </div>
+
+        <div class="form-grupo">
+            <label for="modelo">Modelo:</label>
+            <select id="modelo" disabled>
+                <option value="">Selecione a marca primeiro...</option>
+            </select>
+        </div>
+
+        <div class="form-grupo">
+            <label for="ano">Ano / Combustível:</label>
+            <select id="ano" disabled>
+                <option value="">Selecione o modelo primeiro...</option>
+            </select>
+        </div>
+
+        <!-- Indicador de Processamento (Requisito obrigatório do trabalho) -->
+        <div id="loading" class="oculto">
+            <span>⏳ Consultando dados, aguarde...</span>
+        </div>
+
+        <!-- Área onde o preço e os detalhes do carro vão aparecer -->
+        <div id="resultado" class="resultado oculto"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
